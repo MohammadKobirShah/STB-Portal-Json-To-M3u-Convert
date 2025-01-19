@@ -33,6 +33,8 @@ Place your channels.json file in the same directory as the script.
 Run the script:
 
 bash
+Copy
+Edit
 python json_to_m3u.py
 The script generates:
 
@@ -42,6 +44,8 @@ Input JSON Format
 The JSON file should follow this structure:
 
 json
+Copy
+Edit
 {
     "js": {
         "data": [
@@ -64,6 +68,8 @@ json
 Example Output
 M3U Playlist (tata_playlist_with_epg.m3u)
 m3u
+Copy
+Edit
 #EXTM3U
 #EXTINF:-1 tvg-id="channel.id" tvg-name="Channel Name" group-title="Category" tvg-logo="http://example.com/logo.png",Channel Name
 http://example.com/stream.m3u8
@@ -82,4 +88,35 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Author
-Developed by [Kobir Shah](https://github.com/MohammadKobirShah).
+Developed by[Kobir Shah](https://github.com/MohammadKobirShah).
+
+yaml
+Copy
+Edit
+
+---
+
+### Steps to Upload to GitHub
+1. **Initialize Git in the project directory:**
+   ```bash
+   git init
+Add the script and README:
+bash
+Copy
+Edit
+git add json_to_m3u.py README.md
+Commit the files:
+bash
+Copy
+Edit
+git commit -m "Initial commit: Add JSON to M3U converter script and README"
+Create a new repository on GitHub and follow the instructions to add a remote.
+bash
+Copy
+Edit
+git remote add origin https://github.com/yourusername/json-to-m3u.git
+Push the code:
+bash
+Copy
+Edit
+git push -u origin main
